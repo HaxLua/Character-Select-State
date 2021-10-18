@@ -5,7 +5,7 @@ Hello this my state that I made!
 ------
 **Note: Still in beta!**
 ------
-# how to get it working?
+# How to get it working?
 
 1. Go to line 717 or do find SONG.player1
 **Image**
@@ -14,7 +14,7 @@ Hello this my state that I made!
 
 -------
 
-**How to Use in story mode or freeplay**
+# How to Use in story mode or freeplay
 ------
 # Story mode
 ------
