@@ -67,10 +67,7 @@ class TestState extends MusicBeatState
 
     var characters:Array<String> = [
         'bf',
-        'bfc-playable',
-        'bf-half',
-        'bfgod',
-        'bf-pixel'
+        'your-character-name'
     ];
     var iconP1 = new HealthIcon('bf', true);                                                       
     override public function create():Void
