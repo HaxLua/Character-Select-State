@@ -15,8 +15,7 @@
         ;KMMMX.  :ddMK:olMMMMM: ;MM: xMMMx.0MO  .MMMMN''XMWoXOWMMMMMM0,      
         dMMMMd.  WMMMModXMMMMM. WMMk  0MMMl.,.  .WMMMM0 ;MMMMNoWMMMMMMMx.    
      .o0MMMMMMW  KMMMMMMMMMMMM .MMMW   OMMMNo'  cMMMMW0 'MMMMk oX0XMMMMMMx   
-    :MMMK00k0kd  OMMMMMMMMMMWo .,dNo    xMMMk'  .WMo    .:lko           .    
-   .l:'.         .,ldodxk ,,      .      cc.                                 
+    :MMMK00k0kd  OMMMMMMMMMMWo .,dNo    xMMMk'  .WMo    .:lko                              
                                                                              
 # Video
 
