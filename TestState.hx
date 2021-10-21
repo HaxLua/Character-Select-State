@@ -66,7 +66,11 @@ class TestState extends MusicBeatState
     var moving:Bool = false;
 
     var characters:Array<String> = [
-       'your character or bf'
+        'bf',
+        'bfc-playable',
+        'bf-half',
+        'bfgod',
+        'bf-pixel'
     ];
     var iconP1 = new HealthIcon('bf', true);                                                       
     override public function create():Void
@@ -156,8 +160,36 @@ class TestState extends MusicBeatState
                 //     case senpai:
                 //         character = 'bf-pixel';
                 // }
-                LoadingState.loadAndSwitchState(new PlayState(), true);
-				FreeplayState.destroyFreeplayVocals();
+                FlxG.sound.play(Paths.sound('confirmMenu'));
+                FlxTween.tween(iconP1, {x: 3000}, 0.5, 
+                    {
+                        type: FlxTween.ONESHOT,
+                        ease: FlxEase.quadIn,
+                    });
+                FlxTween.tween(cur_character, {x: 3000}, 0.5, 
+                    {
+                        type: FlxTween.ONESHOT,
+                        ease: FlxEase.elasticOut,
+                    });
+                FlxTween.tween(logoBl, {y: 4}, 5, 
+                {
+                    ease: FlxEase.elasticOut,
+                    startDelay: 2,
+                    onComplete: function(twn:FlxTween)
+                        {
+                        // LoadingState.loadAndSwitchState(new PlayState(), true);
+                        // FreeplayState.destroyFreeplayVocals();
+                        new FlxTimer().start(0.7, function(tmr:FlxTimer)
+                            {
+                                FlxG.camera.fade(FlxColor.BLACK, 1.3, false, function()
+                                {
+                                    LoadingState.loadAndSwitchState(new PlayState(), true);
+                                    FreeplayState.destroyFreeplayVocals();
+                                });
+                            });
+                        }
+                });
+                
             }
             if (controls.BACK){
                 if (PlayState.isStoryMode){
