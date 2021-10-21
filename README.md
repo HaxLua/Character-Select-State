@@ -1,3 +1,10 @@
+
+# Video
+
+https://youtu.be/DUFDVT5LY60
+
+
+
 # Character-Select-State
 Hello this my state that I made!
 
@@ -6,6 +13,8 @@ Hello this my state that I made!
 **Note: Still in beta!**
 
 # How to get it working?
+
+
 
 1. Put the flie in your source
 2. Go to line 717 or do find SONG.player1
@@ -28,4 +37,5 @@ Go to line 299
 Coming soon!
 ----
 I share my stuff and try to help!
+
 
