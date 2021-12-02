@@ -34,6 +34,22 @@
         / __|/ __| '__/ _ \/ _ \ '_ \  \___ \| __/ _` | __/ _ \
         \__ \ (__| | |  __/  __/ | | |  ___) | || (_| | ||  __/
         |___/\___|_|  \___|\___|_| |_| |____/ \__\__,_|\__\___|
+        
+        
+        
+ # UPDATE ADD THIS!
+
+Go to LoadingState.hx
+
+and put this in `static public var dir:String = 'shared';`
+and find: `var directory:String = 'shared';` replace it with this: `var directory:String = dir;`
+
+then in StoryMenuState.hx:
+
+Add `static public var week:Int = curWeek;`
+
+Thanks for @FNAF-fan-9000 for pointing this out.
+
 
 # Video
 
